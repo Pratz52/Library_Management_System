@@ -1,0 +1,28 @@
+<body>
+<div style="padding-left: 100px;">
+    <h1>Add Students</h1>
+
+<form [formGroup]="studentsform" (ngSubmit)="sStudent()">
+    <!-- <label>ID</label>
+    <input type="number" formControlName="id"> -->
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <label>Department</label>
+    <input type="text" formControlName="department">
+    <label>Roll Number</label>
+    <input type="text" formControlName="rollNumber">
+    <label>Birth Date</label>
+    <input type="text" formControlName="birthDate">
+    <label>Mobile Number</label>
+    <input type="text" formControlName="mobileNumber">
+    <button type="Submit">Submit</button><br><br>
+    <!-- <input type="submit" value="Save Students"> -->
+    <!-- <div *ngIf="studentsform.valid">
+       
+    </div> -->
+
+</form>
+
+</div>
+</body>
+

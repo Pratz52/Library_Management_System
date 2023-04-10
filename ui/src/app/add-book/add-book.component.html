@@ -1,0 +1,35 @@
+<body>
+<div style="padding-left: 100px;">
+    <h1>Add Books</h1>
+
+<form [formGroup]="booksform" (ngSubmit)="saveBook()">
+    <label>Title</label>
+    <input type="text" formControlName="title">
+    <label>Author</label>
+    <input type="text" formControlName="author">
+    <label>ISBN</label>
+    <input type="text" formControlName="isbn">
+    <label>Publication Date</label>
+    <input type="text" formControlName="publicationDate">
+    <label>Publisher</label>
+    <input type="text" formControlName="publisher">
+    <label>Copies</label>
+    <input type="number" formControlName="copies">
+    <label>Category</label>
+    <input type="text" formControlName="category">
+    <label>Genre</label>
+    <input type="text" formControlName="genre">
+    <label>Subgenre</label>
+    <input type="text" formControlName="subgenre">
+
+
+    <div *ngIf="booksform.valid">
+        <input type="submit" value="Save Book">
+    </div>
+    
+</form>
+
+</div>
+</body>
+
+

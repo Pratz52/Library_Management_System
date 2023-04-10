@@ -1,0 +1,22 @@
+<body>
+<div style="padding-left: 100px;">
+    <h1>Add Authors</h1>
+
+    <form [formGroup]="authorsform" (ngSubmit)="saveAuthor()">
+        <!-- <label>ID</label>
+        <input type="number" formControlName="id"> -->
+        <label>Name</label>
+        <input type="text" formControlName="name">
+        <label>Birth Date</label>
+        <input type="text" formControlName="birthDate">
+        <label>Nationality</label>
+        <input type="text" formControlName="nationality">
+
+        <div *ngIf="authorsform.valid">
+            <input type="submit" value="Save Author">
+        </div>
+
+    </form>
+</div>
+</body>
+

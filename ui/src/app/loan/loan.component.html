@@ -1,0 +1,33 @@
+<!-- <p>loan works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book ID</th>
+            <th>Student ID</th>
+            <th>Issued Date</th>
+            <th>Due Date</th>
+            <th>Return Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let loan of loans">
+            <td>{{loan.id}}</td>
+            <td>{{loan.bookId}}</td>
+            <td>{{loan.studentId}}</td>
+            <td>{{loan.chechOutDate}}</td>
+            <td>{{loan.dueDate}}</td>
+            <td>{{loan.returnDate}}</td>
+            <td>
+                <button (click)="deleteLoans(loan.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addLoan()">Add Loan</button>
+</div>
+</body>

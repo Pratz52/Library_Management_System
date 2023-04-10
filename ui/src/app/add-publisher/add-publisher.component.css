@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(130, 187, 244);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 05px 08px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 05px 08px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 05px 08px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 05px 08px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}

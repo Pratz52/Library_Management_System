@@ -1,0 +1,29 @@
+<!-- <p>author works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Birthdate</th>
+            <th>Nationality</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let author of authors">
+            <td>{{author.id}}</td>
+            <td>{{author.name}}</td>
+            <td>{{author.birthDate}}</td>
+            <td>{{author.nationality}}</td>
+            <td>
+                <button (click)="deleteAuthor(author.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addAuthor()">Add Author</button>
+</div>
+</body>

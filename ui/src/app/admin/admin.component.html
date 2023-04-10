@@ -1,0 +1,28 @@
+<!-- <p>admin works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let admin of admins">
+            <td>{{admin.id}}</td>
+            <td>{{admin.name}}</td>
+            <td>{{admin.username}}</td>
+            <td>{{admin.password}}</td>
+            <td>
+                <button (click)="deleteAdmin(admin.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addAdmins()">Add Admin</button>
+</div>
+</body>

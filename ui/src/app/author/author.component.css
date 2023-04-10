@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(235, 165, 111, 0.997);
+}
+
+h2{
+    text-align:center;
+}
+
+.tab{
+    margin-left: auto;
+    margin-right: auto;
+}

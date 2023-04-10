@@ -1,0 +1,30 @@
+<!-- <p>publisher works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let publisher of publishers">
+            <td>{{publisher.id}}</td>
+            <td>{{publisher.name}}</td>
+            <td>{{publisher.address}}</td>
+            <td>{{publisher.phoneNo}}</td>
+            <td>{{publisher.emailId}}</td>
+            <td>
+                <button (click)="deletePublisher(publisher.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addPublisher()">Add Publisher</button>
+</div>
+</body>

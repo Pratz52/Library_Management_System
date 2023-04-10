@@ -1,0 +1,41 @@
+<!-- <p>book works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Publication Date</th>
+            <th>Publisher</th>
+            <th>Copies</th>
+            <th>Category</th>
+            <th>Genre</th>
+            <th>Subgenre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.isbn}}</td>
+            <td>{{book.publicationDate}}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.copies}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.genre}}</td>
+            <td>{{book.subgenre}}</td>
+            <td>
+                <button (click)="deleteBook(book.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addBooks()">Add Book</button>
+</div>
+</body>

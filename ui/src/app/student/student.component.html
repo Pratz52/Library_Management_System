@@ -1,0 +1,32 @@
+<!-- <p>student works!</p> -->
+<body>
+<h2>{{title}}</h2>
+<table border="4" class="tab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll Number</th>
+            <th>Birth Date</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.department}}</td>
+            <td>{{student.rollNumber}}</td>
+            <td>{{student.birthDate}}</td>
+            <td>{{student.mobileNumber}}</td>
+            <td>
+                <button type="Delete" (click)="deleteStudent(student.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div style="width: 20px; float: right;">
+    <button class="button" (click)="addStudent()">Add Student</button>
+</div>
+</body>
